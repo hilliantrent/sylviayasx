@@ -17,9 +17,9 @@ The original Webnode site has not been changed. Original article paths are retai
 
 The website files are uploaded to https://github.com/hilliantrent/sylviayasx on the main branch.
 
-The requested host is GitHub Pages, using the same CNAME approach as hilliantrent/hilliantrent.github.io. The root CNAME file contains `sylviayasx.com`.
+The requested host is GitHub Pages, using the same CNAME approach as hilliantrent/hilliantrent.github.io. The root CNAME file contains `sylviakatxo.com`.
 
-To enable publishing, open https://github.com/hilliantrent/sylviayasx/settings/pages and select **Deploy from a branch > main > /(root)**, then Save. Under Custom domain, confirm `sylviayasx.com` and Save if needed.
+To enable publishing, open https://github.com/hilliantrent/sylviayasx/settings/pages and select **Deploy from a branch > main > /(root)**, then Save. Under Custom domain, confirm `sylviakatxo.com` and Save if needed.
 
 At the domain provider, point the apex (`@`) A records to GitHub Pages:
 
@@ -30,7 +30,7 @@ At the domain provider, point the apex (`@`) A records to GitHub Pages:
 
 Point a `www` CNAME record to `hilliantrent.github.io`, with no repository path. Preserve unrelated mail and verification records. Enable Enforce HTTPS in Pages after the domain and certificate checks complete.
 
-As of the setup check on October 14, 2026, GitHub Pages was not enabled on this repository, and sylviayasx.com resolved to 34.111.179.208 rather than GitHub Pages. No DNS records have been changed.
+As of the setup check on October 14, 2026, GitHub Pages was not enabled on this repository. The requested domain sylviakatxo.com had no DNS record, and the .com registry RDAP lookup returned 404 (not found), so it appears not to be registered yet. Domain registration and DNS setup are still needed. No DNS records have been changed.
 
 ## Edit links
 
