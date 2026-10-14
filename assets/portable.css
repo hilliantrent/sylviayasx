@@ -1,0 +1,15 @@
+/* Portable navigation and accessibility additions. */
+html { scroll-behavior: smooth; }
+body { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.wnd-free-stripe, .wnd-free-bar, .cookiebar, .wnd-cookie-bar, #wnd-cookie-bar, #wnd-cookie-settings { display: none !important; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.b-text a { overflow-wrap: anywhere; }
+.logo-embed { color: #fff; }
+@media (max-width: 599px) {
+  #menu-block { display: none !important; }
+  body.portable-menu-open #menu-block { display: block !important; position: relative !important; inset: auto !important; opacity: 1 !important; visibility: visible !important; transform: none !important; padding: 16px 0; }
+  body.portable-menu-open #menu { display: block !important; position: relative !important; inset: auto !important; opacity: 1 !important; visibility: visible !important; transform: none !important; background: #000; }
+  body.portable-menu-open #menu .level-1 { display: block !important; }
+  body.portable-menu-open .menu-close { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
