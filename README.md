@@ -15,11 +15,22 @@ The original Webnode site has not been changed. Original article paths are retai
 
 ## Publish
 
-Upload the contents of this folder, including `index.html`, `assets`, `l`, `blog`, `contact`, and `.nojekyll`, to the repository root. Upload the extracted files, not the ZIP itself.
+The website files are uploaded to https://github.com/hilliantrent/sylviayasx on the main branch.
 
-For GitHub Pages, select **Settings > Pages > Build and deployment > Deploy from a branch**, then select `main` and `/(root)`. GitHub Pages has restrictions on commercial sites; review the policy below before choosing it as the host. A GitHub repository can also supply the files to another static host, such as Cloudflare Pages.
+The requested host is GitHub Pages, using the same CNAME approach as hilliantrent/hilliantrent.github.io. The root CNAME file contains `sylviayasx.com`.
 
-Desired public address: `sylviayasx.com`. Domain registration and ownership have not been confirmed. There is deliberately no `CNAME` file yet. Verify the domain and configure it with the chosen host before changing DNS. Free hosting does not include registration or renewal of the custom domain.
+To enable publishing, open https://github.com/hilliantrent/sylviayasx/settings/pages and select **Deploy from a branch > main > /(root)**, then Save. Under Custom domain, confirm `sylviayasx.com` and Save if needed.
+
+At the domain provider, point the apex (`@`) A records to GitHub Pages:
+
+- 185.199.108.153
+- 185.199.109.153
+- 185.199.110.153
+- 185.199.111.153
+
+Point a `www` CNAME record to `hilliantrent.github.io`, with no repository path. Preserve unrelated mail and verification records. Enable Enforce HTTPS in Pages after the domain and certificate checks complete.
+
+As of the setup check on October 14, 2026, GitHub Pages was not enabled on this repository, and sylviayasx.com resolved to 34.111.179.208 rather than GitHub Pages. No DNS records have been changed.
 
 ## Edit links
 
